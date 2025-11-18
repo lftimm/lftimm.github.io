@@ -1,6 +1,6 @@
 const webTitle = "Tilt's webspace";
 
-const headerTitle = document.getElementsByClassName("title-txt")[0];
+const headerTitle = document.getElementsByClassName("header-txt")[0];
 bindElements([
     {ele: document, prop: "title"},
     {ele: headerTitle, prop: "innerText"}

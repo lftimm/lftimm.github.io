@@ -1,3 +1,10 @@
+:root {
+    --primary-bg-color: #0a0a0a;
+    --secondary-bg-color: #1a1a1a;
+    --accent-color: #230D02;
+    --text-color: #cbcbcb;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +14,7 @@ body {
     font-family: "Saira", sans-serif;
     color: #cbcbcb;
     position: absolute;
-    background-color:#151515;
+    background-color:var(--primary-bg-color);
     min-width: 60vw;
     margin: 0 20vw;
 }
@@ -16,12 +23,25 @@ div.container {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     min-height: 100vh;
     max-height: auto;
-    background-color: #3d2b29;
+    background-color: var(--secondary-bg-color);
 }
 
 img.header-img {
     margin: 0%;
     width: 100%;
-    height: 300px;
+    height: 220px;
     object-fit: cover;
+    display: block;
+}
+
+div.header-border {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--text-color);
+}
+
+h1.header-txt {
+    margin-left: 8px;
+    font-size: 18pt;
+    color: var(--primary-bg-color);
 }
